@@ -8,7 +8,7 @@ user_balance = int(input('How much money would you like to load onto your accoun
 initial_balance = user_balance
 
 def run_point_bets(i, user_balance, bet):
-    j = randint(1, 12)             
+    j = randint(1, 6) + randint(1, 6)             
     print('You have rolled ' + str(j) + '.')
     if (j == i):
         print('Congratulations! You have won ' + str(bet) + ' USD.' )
@@ -35,7 +35,7 @@ play_again = True           #We want the user to potentially play multiple round
 while (play_again == True):
 
     bet = int(input('How much do you want to bet? \n'))
-    i = randint(1, 12)                  
+    i = randint(1, 6) + randint(1, 6)                
     print('You have rolled ' + str(i) + '.')
     while (bet > user_balance):
 
